@@ -40,7 +40,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/helio/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -48,21 +48,21 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/helio/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-small.png?v=5.1.4">
+<link href="/helio/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-small.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/helio/favicon-small.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-small.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/helio/images/favicon-small.png?v=5.1.4">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+  <link rel="icon" type="image/png" sizes="16x16" href="/helio/images/favicon-small.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/helio/images/logo.svg?v=5.1.4" color="#222">
 
 
 
@@ -83,23 +83,23 @@
 <meta name="keywords" content="多线程,C#">
 <meta property="og:type" content="article">
 <meta property="og:title" content="多线程学习（二）">
-<meta property="og:url" content="http://yoursite.com/2019/06/23/Thread02/index.html">
+<meta property="og:url" content="http://heliooo.gitee.io/helio/2019/06/23/Thread02/index.html">
 <meta property="og:site_name" content="Helio Blog">
 <meta property="og:description" content="向线程传递参数&amp;emsp;代码中实现了三种不同的方法向线程中传递参数。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2019/06/23/Thread02/wallhaven.jpg">
+<meta property="og:image" content="http://heliooo.gitee.io/helio/2019/06/23/Thread02/wallhaven.jpg">
 <meta property="og:updated_time" content="2019-06-28T08:52:08.571Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="多线程学习（二）">
 <meta name="twitter:description" content="向线程传递参数&amp;emsp;代码中实现了三种不同的方法向线程中传递参数。">
-<meta name="twitter:image" content="http://yoursite.com/2019/06/23/Thread02/wallhaven.jpg">
+<meta name="twitter:image" content="http://heliooo.gitee.io/helio/2019/06/23/Thread02/wallhaven.jpg">
 
 
 
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '/helio/',
     scheme: 'Pisces',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/06/23/Thread02/">
+  <link rel="canonical" href="http://heliooo.gitee.io/helio/2019/06/23/Thread02/">
 
 
 
@@ -156,7 +156,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/helio/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">Helio Blog</span>
         <span class="logo-line-after"><i></i></span>
@@ -184,7 +184,7 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
+          <a href="/helio/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
@@ -194,7 +194,7 @@
       
         
         <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
+          <a href="/helio/about/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
@@ -204,7 +204,7 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
+          <a href="/helio/categories/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
@@ -214,7 +214,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+          <a href="/helio/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
@@ -224,7 +224,7 @@
       
         
         <li class="menu-item menu-item-guestbook">
-          <a href="/guestbook" rel="section">
+          <a href="/helio/guestbook" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-comment"></i> <br>
             
@@ -297,12 +297,12 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/23/Thread02/">
+    <link itemprop="mainEntityOfPage" href="http://heliooo.gitee.io/helio/helio/2019/06/23/Thread02/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content>
       <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/c.jpg">
+      <meta itemprop="image" content="/helio/images/c.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -352,7 +352,7 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/04-C-基础/" itemprop="url" rel="index">
+                  <a href="/helio/categories/04-C-基础/" itemprop="url" rel="index">
                     <span itemprop="name">04 C#基础</span>
                   </a>
                 </span>
@@ -363,7 +363,7 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/04-C-基础/多线程/" itemprop="url" rel="index">
+                  <a href="/helio/categories/04-C-基础/多线程/" itemprop="url" rel="index">
                     <span itemprop="name">多线程</span>
                   </a>
                 </span>
@@ -381,8 +381,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/06/23/Thread02/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/23/Thread02/" itemprop="commentCount"></span>
+                <a href="/helio/2019/06/23/Thread02/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/helio/2019/06/23/Thread02/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -446,7 +446,7 @@
       
 
       
-        <img src="/2019/06/23/Thread02/wallhaven.jpg">
+        <img src="/helio/2019/06/23/Thread02/wallhaven.jpg">
 <h2 id="向线程传递参数"><a href="#向线程传递参数" class="headerlink" title="向线程传递参数"></a>向线程传递参数</h2><p>&emsp;代码中实现了三种不同的方法向线程中传递参数。<br><a id="more"></a><br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*-----------------------------------------------------------------------</span></span><br><span class="line"><span class="comment">                        written by helio, 2019</span></span><br><span class="line"><span class="comment">                            ThreadSample3</span></span><br><span class="line"><span class="comment">-----------------------------------------------------------------------*/</span></span><br><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> System.Threading;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">ThreadSample</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">var</span> sample = <span class="keyword">new</span> ThreadSample(<span class="number">10</span>);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">var</span> ThreadOne  = <span class="keyword">new</span> Thread(sample.CountNumbers);</span><br><span class="line">            ThreadOne.Name = <span class="string">"ThreadOne"</span>;</span><br><span class="line">            ThreadOne.Start();</span><br><span class="line">            ThreadOne.Join();</span><br><span class="line">            Console.WriteLine(<span class="string">"------------------------"</span>);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">var</span> ThreadTwo = <span class="keyword">new</span> Thread(Count);</span><br><span class="line">            ThreadTwo.Name = <span class="string">"ThreadTwo"</span>;</span><br><span class="line">            ThreadTwo.Start(<span class="number">8</span>);</span><br><span class="line">            ThreadTwo.Join();</span><br><span class="line">            Console.WriteLine(<span class="string">"------------------------"</span>);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">var</span> ThreadThree = <span class="keyword">new</span> Thread(() =&gt; CountNumbers(<span class="number">12</span>));</span><br><span class="line">            ThreadThree.Name = <span class="string">"ThreadThree"</span>;</span><br><span class="line">            ThreadThree.Start();</span><br><span class="line">            ThreadThree.Join();</span><br><span class="line">            Console.WriteLine(<span class="string">"------------------------"</span>);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">int</span> i = <span class="number">10</span>;</span><br><span class="line">            <span class="keyword">var</span> ThreadFour = <span class="keyword">new</span> Thread(() =&gt; PrintNumber(i));</span><br><span class="line">            i = <span class="number">20</span>;</span><br><span class="line">            <span class="keyword">var</span> ThreadFive = <span class="keyword">new</span> Thread(() =&gt; PrintNumber(i));</span><br><span class="line">            ThreadFour.Start();</span><br><span class="line">            ThreadFive.Start();</span><br><span class="line"></span><br><span class="line">            Console.ReadKey();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Count</span>(<span class="params"><span class="keyword">object</span> iterations</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            CountNumbers((<span class="keyword">int</span>)iterations);</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">CountNumbers</span>(<span class="params"><span class="keyword">int</span> iterations</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= iterations; i++)</span><br><span class="line">            &#123;</span><br><span class="line">                Thread.Sleep(TimeSpan.FromMilliseconds(<span class="number">0.5</span>));</span><br><span class="line">                Console.WriteLine(<span class="string">"&#123;0&#125; prins &#123;1&#125;"</span>,</span><br><span class="line">                    Thread.CurrentThread.Name, i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">PrintNumber</span>(<span class="params"><span class="keyword">int</span> number</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            Console.WriteLine(number);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">class</span> <span class="title">ThreadSample</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">private</span> <span class="keyword">readonly</span> <span class="keyword">int</span> m_iterations;</span><br><span class="line"></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="title">ThreadSample</span>(<span class="params"><span class="keyword">int</span> iterations</span>)</span></span><br><span class="line"><span class="function"></span>            &#123;</span><br><span class="line">                m_iterations = iterations;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">CountNumbers</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>            &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m_iterations; i++)</span><br><span class="line">                &#123;</span><br><span class="line">                    Thread.Sleep(TimeSpan.FromSeconds(<span class="number">0.5</span>));</span><br><span class="line">                    Console.WriteLine(<span class="string">"&#123;0&#125; prints &#123;1&#125;"</span>,</span><br><span class="line">                        Thread.CurrentThread.Name, i);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h3 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h3><h4 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h4><p>&emsp;当主程序启动时，首先创建了ThreadSample类的一个对象，并提供了一个迭代次数。然后使用该对象的CounetNumbers方法启动线程。该方法运行在另一个线程中，但是使用数字10，该数字是通过ThreadSample对象的构造函数传入的。</p>
 <h4 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h4><p>&emsp;另一种传递数据的方式是使用Thread.Staru方法。该方法会节后一个对象，并将该对象传递给线程。为了应用该方法，在线程启动的方法必须接收object类型的单个参数。</p>
@@ -470,9 +470,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/多线程/" rel="tag"># 多线程</a>
+            <a href="/helio/tags/多线程/" rel="tag"># 多线程</a>
           
-            <a href="/tags/C/" rel="tag"># C#</a>
+            <a href="/helio/tags/C/" rel="tag"># C#</a>
           
         </div>
       
@@ -485,7 +485,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/23/Thread01/" rel="next" title="多线程学习（一）">
+              <a href="/helio/2019/06/23/Thread01/" rel="next" title="多线程学习（一）">
                 <i class="fa fa-chevron-left"></i> 多线程学习（一）
               </a>
             
@@ -495,7 +495,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/06/28/NetWorking01/" rel="prev" title="运输层协议概述">
+              <a href="/helio/2019/06/28/NetWorking01/" rel="prev" title="运输层协议概述">
                 运输层协议概述 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -566,7 +566,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/c.jpg" alt>
+              <img class="site-author-image" itemprop="image" src="/helio/images/c.jpg" alt>
             
               <p class="site-author-name" itemprop="name"></p>
               <p class="site-description motion-element" itemprop="description"></p>
@@ -577,7 +577,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                <a href="/helio/archives/">
               
                   <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">日志</span>
@@ -589,7 +589,7 @@
               
               
               <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
+                <a href="/helio/categories/index.html">
                   <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
@@ -600,7 +600,7 @@
               
               
               <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
+                <a href="/helio/tags/index.html">
                   <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
@@ -779,64 +779,64 @@
 
   
   
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+    <script type="text/javascript" src="/helio/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+    <script type="text/javascript" src="/helio/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+    <script type="text/javascript" src="/helio/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+    <script type="text/javascript" src="/helio/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+    <script type="text/javascript" src="/helio/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript" src="/helio/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/helio/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/helio/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/helio/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/helio/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/helio/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/helio/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/helio/js/src/bootstrap.js?v=5.1.4"></script>
 
 
 
@@ -908,7 +908,7 @@
     } else if (/json$/i.test(search_path)) {
       isXml = false;
     }
-    var path = "/" + search_path;
+    var path = "/helio/" + search_path;
     // monitor main search box;
 
     var onPopupClose = function (e) {
